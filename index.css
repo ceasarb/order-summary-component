@@ -9,6 +9,9 @@
   --very-pale-blue: hsl(225, 100%, 94%);
   --desaturated-blue: hsl(224, 23%, 55%);
   --dark-blue: hsl(223, 47%, 23%);
+  --semi-bold: 700;
+  --font-family: "Red Hat Display";
+  --default-font-size: 1rem;
 }
 
 html body {
@@ -18,8 +21,8 @@ html body {
 body {
   background-color: var(--very-pale-blue);
   height: 100vh;
-  font-family: "Red Hat Display";
-  font-size: 1rem;
+  font-family: var(--font-family);
+  font-size: var(--default-font-size);
   background-image: url(./images/pattern-background-mobile.svg);
 }
 
@@ -97,7 +100,7 @@ button {
   color: #fff;
   height: 3rem;
   margin: 1rem 1.2rem;
-  font-weight: 700;
+  font-weight: var(--semi-bold);
   font-size: 0.85rem;
   box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
 }
@@ -106,7 +109,7 @@ button {
   border: none;
   background-color: #fff;
   color: hsl(210, 22%, 49%);
-  font-weight: 700;
+  font-weight: var(--semi-bold);
   font-size: 0.95rem;
   margin: 0.2rem 1.2rem 1.75rem;
 }
